@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="bg-[#12141D] font-inter">
+    <main>
+        <nav class="max-w-[1170px] mx-auto py-6 flex items-center gap-[80px]">
+            <!-- Header- LOGO and Theme change button starts here -->
+            <header class="flex gap-2">
+                <div>
+                    <h2 class="font-bold text-white">Nettracking</h2>
+                </div>
+                <div class="w-[40px] h-[22px] rounded-full bg-[#2A2B33] relative">
+                    <div class="bg-[#F6F1EC] w-[18px] h-[18px] rounded-full flex items-center justify-center absolute right-[2px] top-1/2 -translate-y-1/2">
+                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.91811 6.81362C7.46774 6.264 7.82628 5.59572 7.99392 4.89124C8.04193 4.68945 7.79393 4.55321 7.64762 4.70024C7.64583 4.70206 7.64403 4.70385 7.64223 4.70565C6.41936 5.92853 4.42202 5.90495 3.229 4.63492C2.10425 3.43756 2.11902 1.57867 3.26118 0.397922C3.27559 0.383036 3.2901 0.368325 3.30473 0.353789C3.45143 0.208037 3.31431 -0.0388342 3.11312 0.00897873C2.4149 0.174909 1.75219 0.528341 1.20524 1.06946C-0.393934 2.65162 -0.402941 5.21679 1.18557 6.80963C2.76714 8.39553 5.33488 8.39684 6.91811 6.81362Z"
+                                fill="#2A2B33" />
+                        </svg>
+                    </div>
+                </div>
+            </header>
+            <!-- Header- LOGO and Theme change button ends here -->
+
+            <!-- Navigation menu starts here -->
+             <menu class="flex-grow">
+                <ul class="flex gap-[34px] text-[13px] font-medium">
+                    <li class="text-[#a0a1a5] hover:text-white"><a href="">Features</a></li>
+                    <li class="text-[#a0a1a5] hover:text-white"><a href="">Pricing</a></li>
+                    <li class="text-[#a0a1a5] hover:text-white"><a href="">How it works</a></li>
+                    <li class="text-[#a0a1a5] hover:text-white"><a href="">Knowledge base</a></li>
+                    <li class="text-[#a0a1a5] hover:text-white"><a href="">FAQ</a></li>
+                </ul>
+             </menu>
+            <!-- Navigation menu ends here -->
+
+            <!-- Signin Signup buttons starts here -->
+            <div class="flex gap-[18px]">
+                <button class="py-[10px] px-[16px] text-white text-[13px] font-semibold bg-[#1D1F29] rounded-[4px]"><a href="#">Sign in</a></button>
+                <button class="py-[10px] px-[16px] text-[#12141D] text-[13px] font-semibold bg-white rounded-[4px]"><a href="#">Sign up</a></button>
+            </div>
+            <!-- Signin Signup buttons ends here -->
+        </nav>
+    </main>
 </body>
+
 </html>
