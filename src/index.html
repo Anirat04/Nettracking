@@ -20,14 +20,16 @@
 
 <body class="bg-[#12141D] font-inter">
     <main>
-        <nav class="max-w-[1170px] mx-auto py-6 flex items-center gap-[80px]">
+        <!-- Navbar Starts here -->
+        <nav id="navbar" class="max-w-[1170px] mx-auto py-6 flex items-center gap-[80px]">
             <!-- Header- LOGO and Theme change button starts here -->
-            <header class="flex gap-2">
+            <header class="flex items-center gap-2">
                 <div>
                     <h2 class="font-bold text-white">Nettracking</h2>
                 </div>
                 <div class="w-[40px] h-[22px] rounded-full bg-[#2A2B33] relative">
-                    <div class="bg-[#F6F1EC] w-[18px] h-[18px] rounded-full flex items-center justify-center absolute right-[2px] top-1/2 -translate-y-1/2">
+                    <div
+                        class="bg-[#F6F1EC] w-[18px] h-[18px] rounded-full flex items-center justify-center absolute right-[2px] top-1/2 -translate-y-1/2">
                         <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M6.91811 6.81362C7.46774 6.264 7.82628 5.59572 7.99392 4.89124C8.04193 4.68945 7.79393 4.55321 7.64762 4.70024C7.64583 4.70206 7.64403 4.70385 7.64223 4.70565C6.41936 5.92853 4.42202 5.90495 3.229 4.63492C2.10425 3.43756 2.11902 1.57867 3.26118 0.397922C3.27559 0.383036 3.2901 0.368325 3.30473 0.353789C3.45143 0.208037 3.31431 -0.0388342 3.11312 0.00897873C2.4149 0.174909 1.75219 0.528341 1.20524 1.06946C-0.393934 2.65162 -0.402941 5.21679 1.18557 6.80963C2.76714 8.39553 5.33488 8.39684 6.91811 6.81362Z"
@@ -39,7 +41,7 @@
             <!-- Header- LOGO and Theme change button ends here -->
 
             <!-- Navigation menu starts here -->
-             <menu class="flex-grow">
+            <menu class="flex-grow">
                 <ul class="flex gap-[34px] text-[13px] font-medium">
                     <li class="text-[#a0a1a5] hover:text-white"><a href="">Features</a></li>
                     <li class="text-[#a0a1a5] hover:text-white"><a href="">Pricing</a></li>
@@ -47,16 +49,44 @@
                     <li class="text-[#a0a1a5] hover:text-white"><a href="">Knowledge base</a></li>
                     <li class="text-[#a0a1a5] hover:text-white"><a href="">FAQ</a></li>
                 </ul>
-             </menu>
+            </menu>
             <!-- Navigation menu ends here -->
 
             <!-- Signin Signup buttons starts here -->
             <div class="flex gap-[18px]">
-                <button class="py-[10px] px-[16px] text-white text-[13px] font-semibold bg-[#1D1F29] rounded-[4px]"><a href="#">Sign in</a></button>
-                <button class="py-[10px] px-[16px] text-[#12141D] text-[13px] font-semibold bg-white rounded-[4px]"><a href="#">Sign up</a></button>
+                <button class="py-[10px] px-[16px] text-white text-[13px] font-semibold bg-[#1D1F29] rounded-[4px]"><a
+                        href="#">Sign in</a></button>
+                <button class="py-[10px] px-[16px] text-[#12141D] text-[13px] font-semibold bg-white rounded-[4px]"><a
+                        href="#">Sign up</a></button>
             </div>
             <!-- Signin Signup buttons ends here -->
         </nav>
+
+        <!-- Banner section starts here -->
+        <section id="banner" class="max-w-[1170px] mx-auto mt-[60px]">
+            <div class="max-w-[620px] mx-auto text-center">
+                <div>
+                    <h1 class="text-white text-[42px] font-bold leading-[46px]"> Content marketing solution & idea of your business</h1>
+                    <p class="text-[#87888D] text-[20px] leading-6 mt-4 px-20">Nettracking is a content marketing solution that tracks the effectiveness of your blog,</p>
+                </div>
+                <div class="flex justify-center gap-4 mt-5">
+                    <button class="bg-[#FF664F] text-[14px] font-semibold text-white flex items-center gap-2 py-[14px] px-[30px] rounded-lg">
+                        <span>Explore Platform </span>
+                        <span>
+                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.48084 4.65475C0.513574 4.66094 0.546702 4.6638 0.579847 4.6633L6.22369 4.6633L6.10062 4.73004C5.98033 4.79643 5.8709 4.88679 5.77722 4.99702L4.19455 6.84247C3.9861 7.07449 3.95108 7.44773 4.11155 7.72682C4.29831 8.02423 4.65647 8.0888 4.91154 7.87103C4.93215 7.85343 4.95174 7.83424 4.97014 7.81359L7.83212 4.47642C8.05579 4.21591 8.05598 3.79332 7.83257 3.53252C7.83243 3.53235 7.83227 3.53216 7.83212 3.532L4.97014 0.194825C4.7463 -0.0654532 4.38388 -0.0648696 4.16065 0.196139C4.14308 0.216684 4.12668 0.238542 4.11155 0.261568C3.95108 0.540661 3.9861 0.913902 4.19454 1.14592L5.77436 2.99471C5.85834 3.09274 5.9549 3.17494 6.06056 3.23833L6.23228 3.32843L0.611346 3.32843C0.318941 3.31577 0.0624004 3.55394 0.00746834 3.88908C-0.043135 4.25293 0.168795 4.59572 0.48084 4.65475Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="bg-[#22222B] text-[14px] font-semibold text-white py-[14px] px-[30px] rounded-lg">
+                        <a href="">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Banner section ends here -->
     </main>
 </body>
 
