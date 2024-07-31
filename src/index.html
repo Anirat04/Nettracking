@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nettracking</title>
     <link href="./output.css" rel="stylesheet">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,33 +12,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
-    <style>
-        .font-inter {
-            font-family: "Inter", sans-serif;
-        }
-
-        .font-poppins {
-            font-family: "Poppins", sans-serif;
-        }
-
-        .swiper-pagination-bullet-active {
-            background: #65697A !important;
-        }
-
-        .swiper-pagination-bullet {
-            background: #3C3E4A !important;
-        }
-
-        .swiper-slide-active .card-inside {
-            background: #1E2029;
-            border: none;
-        }
-    </style>
+    <!-- Swiper Js CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-[#12141D] font-inter">
+<body class="bg-bodyBg font-inter">
     <main>
         <!-- Navbar Starts here -->
         <nav id="navbar" class="max-w-[1170px] mx-auto py-6 flex items-center gap-[80px]">
@@ -63,11 +41,11 @@
             <!-- Navigation menu starts here -->
             <menu class="flex-grow">
                 <ul class="flex gap-[34px] text-[13px] font-medium">
-                    <li class="text-[#a0a1a5] hover:text-white"><a href="">Features</a></li>
-                    <li class="text-[#a0a1a5] hover:text-white"><a href="">Pricing</a></li>
-                    <li class="text-[#a0a1a5] hover:text-white"><a href="">How it works</a></li>
-                    <li class="text-[#a0a1a5] hover:text-white"><a href="">Knowledge base</a></li>
-                    <li class="text-[#a0a1a5] hover:text-white"><a href="">FAQ</a></li>
+                    <li class="text-menuTextCol hover:text-white"><a href="#key-features">Features</a></li>
+                    <li class="text-menuTextCol hover:text-white"><a href="#our-pricing-plan">Pricing</a></li>
+                    <li class="text-menuTextCol hover:text-white"><a href="#how-it-works">How it works</a></li>
+                    <li class="text-menuTextCol hover:text-white"><a href="">Knowledge base</a></li>
+                    <li class="text-menuTextCol hover:text-white"><a href="#faq">FAQ</a></li>
                 </ul>
             </menu>
             <!-- Navigation menu ends here -->
@@ -88,12 +66,12 @@
                 <div>
                     <h1 class="text-white text-[42px] font-bold leading-[46px]">Content marketing solution & idea of
                         your business</h1>
-                    <p class="text-[#87888D] text-[20px] leading-6 mt-4 px-20">Nettracking is a content marketing
+                    <p class="text-textSecondHeading text-[20px] leading-6 mt-4 px-20">Nettracking is a content marketing
                         solution that tracks the effectiveness of your blog,</p>
                 </div>
                 <div class="flex justify-center gap-4 mt-5">
                     <button
-                        class="bg-[#FF664F] text-[14px] font-semibold text-white flex items-center gap-2 py-[14px] px-[30px] rounded-lg">
+                        class="bg-bgPrimaryOrange text-[14px] font-semibold text-white flex items-center gap-2 py-[14px] px-[30px] rounded-lg">
                         <span>Explore Platform </span>
                         <span>
                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,12 +95,12 @@
                 <!-- Common heading starts here -->
                 <div class="max-w-[590px] mx-auto text-center">
                     <h3 class="text-white text-[42px] font-bold leading-[46px]">Key features</h3>
-                    <p class="text-[#87888D] text-[18px] leading-6 mt-4 ">NetTracking™ has quickly become the go-to
+                    <p class="text-textSecondHeading text-[18px] leading-6 mt-4 ">NetTracking™ has quickly become the go-to
                         content marketing solution for over 600 clients around the world</p>
                 </div>
                 <!-- Features section content starts here -->
                 <div
-                    class="bg-[#1E2029] grid grid-cols-3 gap-x-[110px] gap-y-[65px] py-[80px] px-[100px] rounded-[20px] mt-[100px]">
+                    class="bg-bgPrimary grid grid-cols-3 gap-x-[110px] gap-y-[65px] py-[80px] px-[100px] rounded-[20px] mt-[100px]">
                     <!-- Features Card -->
                     <div>
                         <div
@@ -139,7 +117,7 @@
                         </div>
                         <div>
                             <h3 class="text-white text-[20px] font-semibold mb-[6px]">Real-Time Email Alerts</h3>
-                            <p class="text-[#696B76]">NetTracking" is a very powerful Web 2.0 site search engine allows
+                            <p class="text-textPrimary">NetTracking" is a very powerful Web 2.0 site search engine allows
                                 you to find email allerts</p>
                         </div>
                     </div>
@@ -158,7 +136,7 @@
                         </div>
                         <div>
                             <h3 class="text-white text-[20px] font-semibold mb-[6px]">Monitor Inbound Traffic</h3>
-                            <p class="text-[#696B76]">The biggest challenge for marketers is being heard inbound
+                            <p class="text-textPrimary">The biggest challenge for marketers is being heard inbound
                                 traffice in market.</p>
                         </div>
                     </div>
@@ -181,7 +159,7 @@
                         </div>
                         <div>
                             <h3 class="text-white text-[20px] font-semibold mb-[6px]">Track Multiple Sites</h3>
-                            <p class="text-[#696B76]">Nettracking gives you an innovative web-based tool that manages
+                            <p class="text-textPrimary">Nettracking gives you an innovative web-based tool that manages
                                 multiple sites</p>
                         </div>
                     </div>
@@ -211,7 +189,7 @@
                         </div>
                         <div>
                             <h3 class="text-white text-[20px] font-semibold mb-[6px]">Aggregate Statistics</h3>
-                            <p class="text-[#696B76]">Filters and reports on your website's search engine ranking
+                            <p class="text-textPrimary">Filters and reports on your website's search engine ranking
                                 results.</p>
                         </div>
                     </div>
@@ -238,7 +216,7 @@
                         </div>
                         <div>
                             <h3 class="text-white text-[20px] font-semibold mb-[6px]">Edit Exclude</h3>
-                            <p class="text-[#696B76]">In short, nettracking gives you the information that allows you to
+                            <p class="text-textPrimary">In short, nettracking gives you the information that allows you to
                                 changes in your website's ranking</p>
                         </div>
                     </div>
@@ -258,7 +236,7 @@
                         </div>
                         <div>
                             <h3 class="text-white text-[20px] font-semibold mb-[6px]">Easy To Implements</h3>
-                            <p class="text-[#696B76]">accurately track organic (or natural) search engine movement over
+                            <p class="text-textPrimary">accurately track organic (or natural) search engine movement over
                                 time.</p>
                         </div>
                     </div>
@@ -274,13 +252,13 @@
                 <div class="max-w-[590px] mx-auto text-center">
                     <h3 class="text-white text-[42px] font-bold leading-[46px]">Creative solutions to expand
                         your business!</h3>
-                    <p class="text-[#87888D] text-[16px] leading-6 mt-4 ">Nettracking is designed with an integrated
+                    <p class="text-textSecondHeading text-[16px] leading-6 mt-4 ">Nettracking is designed with an integrated
                         tracking system that allows customers to track their package</p>
                 </div>
                 <!-- Creative solutions content starts here -->
                 <div class="flex gap-5 mt-[84px]">
                     <!-- 1st div -->
-                    <div class="bg-[#1E2029] w-1/2 rounded-[20px] pt-[40px] pb-[100px] px-[50px] relative">
+                    <div class="bg-bgPrimary w-1/2 rounded-[20px] pt-[40px] pb-[100px] px-[50px] relative">
                         <div>
                             <div>
                                 <ul class="text-white text-[14px] font-semibold flex gap-[12px]">
@@ -297,13 +275,13 @@
                             <div class="max-w-[400px] mt-[90px] mb-[40px]">
                                 <h3 class="text-white text-[30px] font-semibold leading-[36px] pr-16 mb-4">Track the
                                     results of your work</h3>
-                                <p class="text-[#696B76]">The tracking system sends customers notifications on shipping
+                                <p class="text-textPrimary">The tracking system sends customers notifications on shipping
                                     date status, shipping notification, delivery confirmation, package delivered with
                                     time and date, etc.</p>
                             </div>
                             <div>
                                 <button
-                                    class="bg-[#FF664F] text-[14px] font-semibold text-white flex items-center gap-2 py-[14px] px-[30px] rounded-lg">
+                                    class="bg-bgPrimaryOrange text-[14px] font-semibold text-white flex items-center gap-2 py-[14px] px-[30px] rounded-lg">
                                     <span>Explore Platform </span>
                                     <span>
                                         <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
@@ -344,7 +322,7 @@
                 <h3 class="text-white text-[42px] font-bold leading-[46px]">How it works</h3>
             </div>
             <!-- How it works content starts here -->
-            <div class="bg-[#1E2029] py-[70px] px-[160px] rounded-[20px] flex flex-col gap-12 relative mt-[65px]">
+            <div class="bg-bgPrimary py-[70px] px-[160px] rounded-[20px] flex flex-col gap-12 relative mt-[65px]">
                 <!-- Card-1 -->
                 <div class="flex items-center justify-between">
                     <div class="bg-[#272932] w-[335px] h-[175px] flex items-center justify-center rounded-xl">
@@ -352,7 +330,7 @@
                     </div>
                     <div class="w-[290px]">
                         <h4 class="text-white text-2xl font-semibold">Add Website</h4>
-                        <p class="text-[#696B76]">Nettracking gives you an innovative web-based tool that manages,
+                        <p class="text-textPrimary">Nettracking gives you an innovative web-based tool that manages,
                             filters and reports on your website's</p>
                     </div>
                 </div>
@@ -363,7 +341,7 @@
                     </div>
                     <div class="w-[290px] text-right">
                         <h4 class="text-white text-2xl font-semibold">Get Tracking Code</h4>
-                        <p class="text-[#696B76]">filters and reports on your website's search engine ranking results.
+                        <p class="text-textPrimary">filters and reports on your website's search engine ranking results.
                             In short, nettracking gives you the information</p>
                     </div>
                 </div>
@@ -376,7 +354,7 @@
                     </div>
                     <div class="w-[290px]">
                         <h4 class="text-white text-2xl font-semibold">Start Tracking</h4>
-                        <p class="text-[#696B76]">In your website's ranking position and accurately track organic (or
+                        <p class="text-textPrimary">In your website's ranking position and accurately track organic (or
                             natural) search engine movement over time.</p>
                     </div>
                 </div>
@@ -410,17 +388,17 @@
                 <!-- Common heading starts here -->
                 <div class="max-w-[590px] mx-auto text-center">
                     <h3 class="text-white text-[42px] font-bold leading-[46px]">Our pricing plan</h3>
-                    <p class="text-[#87888D] text-[16px] leading-6 mt-4 ">online sales tracker that tracks the success
+                    <p class="text-textSecondHeading text-[16px] leading-6 mt-4 ">online sales tracker that tracks the success
                         of your online sales efforts.</p>
                 </div>
                 <!-- Price plan content starts here -->
                 <div class="font-poppins flex justify-center gap-5 mt-[72px]">
                     <!-- Free plan -->
-                    <div class="bg-[#1E2029] rounded-[15px] w-fit pl-[39px] pr-[61px] pt-[50px] pb-[40px]">
+                    <div class="bg-bgPrimary rounded-[15px] w-fit pl-[39px] pr-[61px] pt-[50px] pb-[40px]">
                         <div>
                             <h3 class="text-white text-[20px] font-medium mb-5">Free</h3>
                             <p class="text-white text-[34px] font-bold">$00 <span
-                                    class="text-[#8C8F93] text-[16px] font-medium">3 month trial</span></p>
+                                    class="text-pricePlanSecondaryText text-[16px] font-medium">3 month trial</span></p>
                         </div>
                         <ul class="mb-10 mt-8">
                             <li class="flex items-center gap-3">
@@ -430,7 +408,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#04AA69" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">B2B marketing</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">B2B marketing</p>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span>
@@ -439,7 +417,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#04AA69" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">Cloud-based solution</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">Cloud-based solution</p>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span>
@@ -448,7 +426,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#04AA69" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">Marketing strategies</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">Marketing strategies</p>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span>
@@ -457,7 +435,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#04AA69" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">Automated follow up</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">Automated follow up</p>
                             </li>
                         </ul>
                         <a href="#">
@@ -468,11 +446,11 @@
                         </a>
                     </div>
                     <!-- Basic plan -->
-                    <div class="bg-[#1E2029] rounded-[15px] w-fit pl-[39px] pr-[61px] pt-[50px] pb-[40px]">
+                    <div class="bg-bgPrimary rounded-[15px] w-fit pl-[39px] pr-[61px] pt-[50px] pb-[40px]">
                         <div>
                             <h3 class="text-white text-[20px] font-medium mb-5">Basic</h3>
                             <p class="text-white text-[34px] font-bold">$29 <span
-                                    class="text-[#8C8F93] text-[16px] font-medium">3 month trial</span></p>
+                                    class="text-pricePlanSecondaryText text-[16px] font-medium">3 month trial</span></p>
                         </div>
                         <ul class="mb-10 mt-8">
                             <li class="flex items-center gap-3">
@@ -482,7 +460,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#FF7661" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">B2B marketing</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">B2B marketing</p>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span>
@@ -491,7 +469,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#FF7661" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">Cloud-based solution</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">Cloud-based solution</p>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span>
@@ -500,7 +478,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#FF7661" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">Marketing strategies</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">Marketing strategies</p>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span>
@@ -509,7 +487,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#FF7661" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">Automated follow up</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">Automated follow up</p>
                             </li>
                         </ul>
                         <a href="#">
@@ -520,11 +498,11 @@
                         </a>
                     </div>
                     <!-- Premium plan -->
-                    <div class="bg-[#1E2029] rounded-[15px] w-fit pl-[39px] pr-[61px] pt-[50px] pb-[40px]">
+                    <div class="bg-bgPrimary rounded-[15px] w-fit pl-[39px] pr-[61px] pt-[50px] pb-[40px]">
                         <div>
                             <h3 class="text-white text-[20px] font-medium mb-5">Premium</h3>
                             <p class="text-white text-[34px] font-bold">$99 <span
-                                    class="text-[#8C8F93] text-[16px] font-medium">3 month trial</span></p>
+                                    class="text-pricePlanSecondaryText text-[16px] font-medium">3 month trial</span></p>
                         </div>
                         <ul class="mb-10 mt-8">
                             <li class="flex items-center gap-3">
@@ -534,7 +512,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#6245BD" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">B2B marketing</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">B2B marketing</p>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span>
@@ -543,7 +521,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#6245BD" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">Cloud-based solution</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">Cloud-based solution</p>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span>
@@ -552,7 +530,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#6245BD" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">Marketing strategies</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">Marketing strategies</p>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span>
@@ -561,7 +539,7 @@
                                         <path d="M2 6L6.5 10.5L15 2" stroke="#6245BD" stroke-width="3.5" />
                                     </svg>
                                 </span>
-                                <p class="text-[#606266] text-[18px] font-medium">Automated follow up</p>
+                                <p class="text-pricePlanPrimaryText text-[18px] font-medium">Automated follow up</p>
                             </li>
                         </ul>
                         <a href="#">
@@ -576,11 +554,17 @@
         </section>
         <!-- Our pricing plan section ends here -->
 
-
-        <section class="container ml-auto my-[108px] relative">
+        <!-- Testimonial section starts here -->
+        <section id="testimonial" class="container ml-auto mt-[108px] relative">
             <div class="">
-                <!-- Swiper -->
-                <div class="swiper mySwiper relative" style="padding-top: 30px; padding-bottom: 80px;">
+                <!-- Common heading starts here -->
+                <div class="max-w-[590px] mx-auto text-center">
+                    <h3 class="text-white text-[42px] font-bold leading-[46px]">Testimonials</h3>
+                    <p class="text-textSecondHeading text-[16px] leading-6 mt-4 ">Nettracking is a B2B marketing software for
+                        telecommunications industry.</p>
+                </div>
+                <!-- Testimonial content swiper -->
+                <div class="swiper mySwiper relative !pt-7 !pb-20 mt-[60px]">
                     <div class="swiper-wrapper z-10">
                         <div class="swiper-slide px-[15px] 2xl:p-0">
                             <div
@@ -588,14 +572,14 @@
                                 <img class="absolute -top-[12px] right-10 z-10" src="./assets/testimonial/icon.png"
                                     alt="testimonial quote icon">
                                 <img src="./assets/testimonial/profile.png" alt="testimonial avatar">
-                                <p class="text-[#696B76] font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
+                                <p class="text-textPrimary font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
                                     marketing
                                     software for telecommunications industry. This realtime cloud-based solution tracks
                                     your leads
                                     and works on many</p>
                                 <div>
-                                    <h4 class="text-[#CACACA] text-[18px] font-bold">John Smith</h4>
-                                    <p class="text-[#696B76] text-[12px] font-medium"> UIHUT Company</p>
+                                    <h4 class="text-testimonialUserText text-[18px] font-bold">John Smith</h4>
+                                    <p class="text-textPrimary text-[12px] font-medium"> UIHUT Company</p>
                                 </div>
                             </div>
                         </div>
@@ -605,14 +589,14 @@
                                 <img class="absolute -top-[12px] right-10" src="./assets/testimonial/icon.png"
                                     alt="testimonial quote icon">
                                 <img src="./assets/testimonial/profile.png" alt="testimonial avatar">
-                                <p class="text-[#696B76] font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
+                                <p class="text-textPrimary font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
                                     marketing
                                     software for telecommunications industry. This realtime cloud-based solution tracks
                                     your leads
                                     and works on many</p>
                                 <div>
-                                    <h4 class="text-[#CACACA] text-[18px] font-bold">John Smith</h4>
-                                    <p class="text-[#696B76] text-[12px] font-medium"> UIHUT Company</p>
+                                    <h4 class="text-testimonialUserText text-[18px] font-bold">John Smith</h4>
+                                    <p class="text-textPrimary text-[12px] font-medium"> UIHUT Company</p>
                                 </div>
                             </div>
                         </div>
@@ -622,14 +606,14 @@
                                 <img class="absolute -top-[12px] right-10" src="./assets/testimonial/icon.png"
                                     alt="testimonial quote icon">
                                 <img src="./assets/testimonial/profile.png" alt="testimonial avatar">
-                                <p class="text-[#696B76] font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
+                                <p class="text-textPrimary font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
                                     marketing
                                     software for telecommunications industry. This realtime cloud-based solution tracks
                                     your leads
                                     and works on many</p>
                                 <div>
-                                    <h4 class="text-[#CACACA] text-[18px] font-bold">John Smith</h4>
-                                    <p class="text-[#696B76] text-[12px] font-medium"> UIHUT Company</p>
+                                    <h4 class="text-testimonialUserText text-[18px] font-bold">John Smith</h4>
+                                    <p class="text-textPrimary text-[12px] font-medium"> UIHUT Company</p>
                                 </div>
                             </div>
                         </div>
@@ -639,14 +623,14 @@
                                 <img class="absolute -top-[12px] right-10" src="./assets/testimonial/icon.png"
                                     alt="testimonial quote icon">
                                 <img src="./assets/testimonial/profile.png" alt="testimonial avatar">
-                                <p class="text-[#696B76] font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
+                                <p class="text-textPrimary font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
                                     marketing
                                     software for telecommunications industry. This realtime cloud-based solution tracks
                                     your leads
                                     and works on many</p>
                                 <div>
-                                    <h4 class="text-[#CACACA] text-[18px] font-bold">John Smith</h4>
-                                    <p class="text-[#696B76] text-[12px] font-medium"> UIHUT Company</p>
+                                    <h4 class="text-testimonialUserText text-[18px] font-bold">John Smith</h4>
+                                    <p class="text-textPrimary text-[12px] font-medium"> UIHUT Company</p>
                                 </div>
                             </div>
                         </div>
@@ -656,14 +640,14 @@
                                 <img class="absolute -top-[12px] right-10" src="./assets/testimonial/icon.png"
                                     alt="testimonial quote icon">
                                 <img src="./assets/testimonial/profile.png" alt="testimonial avatar">
-                                <p class="text-[#696B76] font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
+                                <p class="text-textPrimary font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
                                     marketing
                                     software for telecommunications industry. This realtime cloud-based solution tracks
                                     your leads
                                     and works on many</p>
                                 <div>
-                                    <h4 class="text-[#CACACA] text-[18px] font-bold">John Smith</h4>
-                                    <p class="text-[#696B76] text-[12px] font-medium"> UIHUT Company</p>
+                                    <h4 class="text-testimonialUserText text-[18px] font-bold">John Smith</h4>
+                                    <p class="text-textPrimary text-[12px] font-medium"> UIHUT Company</p>
                                 </div>
                             </div>
                         </div>
@@ -673,14 +657,14 @@
                                 <img class="absolute -top-[12px] right-10" src="./assets/testimonial/icon.png"
                                     alt="testimonial quote icon">
                                 <img src="./assets/testimonial/profile.png" alt="testimonial avatar">
-                                <p class="text-[#696B76] font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
+                                <p class="text-textPrimary font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
                                     marketing
                                     software for telecommunications industry. This realtime cloud-based solution tracks
                                     your leads
                                     and works on many</p>
                                 <div>
-                                    <h4 class="text-[#CACACA] text-[18px] font-bold">John Smith</h4>
-                                    <p class="text-[#696B76] text-[12px] font-medium"> UIHUT Company</p>
+                                    <h4 class="text-testimonialUserText text-[18px] font-bold">John Smith</h4>
+                                    <p class="text-textPrimary text-[12px] font-medium"> UIHUT Company</p>
                                 </div>
                             </div>
                         </div>
@@ -690,14 +674,14 @@
                                 <img class="absolute -top-[12px] right-10" src="./assets/testimonial/icon.png"
                                     alt="testimonial quote icon">
                                 <img src="./assets/testimonial/profile.png" alt="testimonial avatar">
-                                <p class="text-[#696B76] font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
+                                <p class="text-textPrimary font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
                                     marketing
                                     software for telecommunications industry. This realtime cloud-based solution tracks
                                     your leads
                                     and works on many</p>
                                 <div>
-                                    <h4 class="text-[#CACACA] text-[18px] font-bold">John Smith</h4>
-                                    <p class="text-[#696B76] text-[12px] font-medium"> UIHUT Company</p>
+                                    <h4 class="text-testimonialUserText text-[18px] font-bold">John Smith</h4>
+                                    <p class="text-textPrimary text-[12px] font-medium"> UIHUT Company</p>
                                 </div>
                             </div>
                         </div>
@@ -707,14 +691,14 @@
                                 <img class="absolute -top-[12px] right-10" src="./assets/testimonial/icon.png"
                                     alt="testimonial quote icon">
                                 <img src="./assets/testimonial/profile.png" alt="testimonial avatar">
-                                <p class="text-[#696B76] font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
+                                <p class="text-textPrimary font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
                                     marketing
                                     software for telecommunications industry. This realtime cloud-based solution tracks
                                     your leads
                                     and works on many</p>
                                 <div>
-                                    <h4 class="text-[#CACACA] text-[18px] font-bold">John Smith</h4>
-                                    <p class="text-[#696B76] text-[12px] font-medium"> UIHUT Company</p>
+                                    <h4 class="text-testimonialUserText text-[18px] font-bold">John Smith</h4>
+                                    <p class="text-textPrimary text-[12px] font-medium"> UIHUT Company</p>
                                 </div>
                             </div>
                         </div>
@@ -724,14 +708,14 @@
                                 <img class="absolute -top-[12px] right-10" src="./assets/testimonial/icon.png"
                                     alt="testimonial quote icon">
                                 <img src="./assets/testimonial/profile.png" alt="testimonial avatar">
-                                <p class="text-[#696B76] font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
+                                <p class="text-textPrimary font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
                                     marketing
                                     software for telecommunications industry. This realtime cloud-based solution tracks
                                     your leads
                                     and works on many</p>
                                 <div>
-                                    <h4 class="text-[#CACACA] text-[18px] font-bold">John Smith</h4>
-                                    <p class="text-[#696B76] text-[12px] font-medium"> UIHUT Company</p>
+                                    <h4 class="text-testimonialUserText text-[18px] font-bold">John Smith</h4>
+                                    <p class="text-textPrimary text-[12px] font-medium"> UIHUT Company</p>
                                 </div>
                             </div>
                         </div>
@@ -741,14 +725,14 @@
                                 <img class="absolute -top-[12px] right-10" src="./assets/testimonial/icon.png"
                                     alt="testimonial quote icon">
                                 <img src="./assets/testimonial/profile.png" alt="testimonial avatar">
-                                <p class="text-[#696B76] font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
+                                <p class="text-textPrimary font-medium italic mt-[24px] mb-[30px]">Nettracking is a B2B
                                     marketing
                                     software for telecommunications industry. This realtime cloud-based solution tracks
                                     your leads
                                     and works on many</p>
                                 <div>
-                                    <h4 class="text-[#CACACA] text-[18px] font-bold">John Smith</h4>
-                                    <p class="text-[#696B76] text-[12px] font-medium"> UIHUT Company</p>
+                                    <h4 class="text-testimonialUserText text-[18px] font-bold">John Smith</h4>
+                                    <p class="text-textPrimary text-[12px] font-medium"> UIHUT Company</p>
                                 </div>
                             </div>
                         </div>
@@ -756,16 +740,14 @@
 
                     <div class="swiper-pagination !text-left ml-5"></div>
                     <div
-                        class="swiper-button-next hidden md:flex after:hidden !w-[9px] !h-[14px] !relative !left-[85%] !top-[72px]"
-                        >
+                        class="swiper-button-next hidden md:flex after:hidden !w-[9px] !h-[14px] !relative !left-[85%] !top-[72px]">
                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 12.3492L5.56507 7L0 1.65083L1.71746 0L9 7L1.71746 14L0 12.3492Z"
                                 fill="#ACA6A6" />
                         </svg>
                     </div>
                     <div
-                        class="swiper-button-prev hidden md:flex after:hidden !w-[9px] !h-[14px] !relative !left-[80%] !top-[80px]"
-                        >
+                        class="swiper-button-prev hidden md:flex after:hidden !w-[9px] !h-[14px] !relative !left-[80%] !top-[80px]">
                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 12.3492L3.43493 7L9 1.65083L7.28254 0L0 7L7.28254 14L9 12.3492Z"
                                 fill="#ACA6A6" />
@@ -774,6 +756,23 @@
                 </div>
             </div>
         </section>
+        <!-- Testimonial section ends here -->
+
+        <!-- FAQ section starts here -->
+        <section id="faq">
+            <div>
+                <!-- Common heading starts here -->
+                <div class="max-w-[590px] mx-auto text-center">
+                    <h3 class="text-white text-[42px] font-bold leading-[46px]">FAQ</h3>
+                    <p class="text-textSecondHeading text-[16px] leading-6 mt-4 ">Measure marketing and PR effectiveness. Find out which</p>
+                </div>
+                <!-- FAQ content starts -->
+                <div class="bg-bgPrimary">
+
+                </div>
+            </div>
+        </section>
+        <!-- FAQ section starts ends here -->
     </main>
 
 

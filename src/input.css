@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+}
+
+.font-poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.swiper-pagination-bullet-active {
+    background: #65697A !important;
+}
+
+.swiper-pagination-bullet {
+    background: #3C3E4A !important;
+}
+
+.swiper-slide-active .card-inside {
+    background: #1E2029;
+    border: none;
+}
