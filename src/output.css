@@ -592,8 +592,28 @@ video {
   position: absolute;
 }
 
+.\!relative {
+  position: relative !important;
+}
+
 .relative {
   position: relative;
+}
+
+.\!left-\[80\%\] {
+  left: 80% !important;
+}
+
+.\!left-\[85\%\] {
+  left: 85% !important;
+}
+
+.\!top-\[72px\] {
+  top: 72px !important;
+}
+
+.\!top-\[80px\] {
+  top: 80px !important;
 }
 
 .-left-5 {
@@ -661,6 +681,11 @@ video {
   margin-right: auto;
 }
 
+.my-\[108px\] {
+  margin-top: 108px;
+  margin-bottom: 108px;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -687,6 +712,10 @@ video {
 
 .mb-\[6px\] {
   margin-bottom: 6px;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .ml-auto {
@@ -745,6 +774,14 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
+.\!h-\[14px\] {
+  height: 14px !important;
+}
+
 .h-\[175px\] {
   height: 175px;
 }
@@ -779,6 +816,10 @@ video {
 
 .max-h-\[505px\] {
   max-height: 505px;
+}
+
+.\!w-\[9px\] {
+  width: 9px !important;
 }
 
 .w-1\/2 {
@@ -979,6 +1020,14 @@ video {
   border-radius: 0.75rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-\[1\.5px\] {
+  border-width: 1.5px;
+}
+
 .border-\[2px\] {
   border-width: 2px;
 }
@@ -989,6 +1038,11 @@ video {
 
 .border-dashed {
   border-style: dashed;
+}
+
+.border-\[\#313239\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(49 50 57 / var(--tw-border-opacity));
 }
 
 .border-\[\#3E4047\] {
@@ -1083,6 +1137,10 @@ video {
 .bg-\[\#f25d46\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 93 70 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-white {
@@ -1189,6 +1247,10 @@ video {
 
 .pt-\[50px\] {
   padding-top: 50px;
+}
+
+.\!text-left {
+  text-align: left !important;
 }
 
 .text-center {
@@ -1317,6 +1379,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.after\:hidden::after {
+  content: var(--tw-content);
+  display: none;
+}
+
 .hover\:bg-\[\#4F5054\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(79 80 84 / var(--tw-bg-opacity));
@@ -1325,4 +1392,16 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:p-0 {
+    padding: 0px;
+  }
 }
