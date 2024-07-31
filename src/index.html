@@ -14,6 +14,7 @@
         rel="stylesheet">
     <!-- Swiper Js CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
 <body class="bg-bodyBg font-inter">
@@ -326,59 +327,65 @@
                 <h3 class="text-white text-[26px] md:text-[42px] font-bold leading-[46px]">How it works</h3>
             </div>
             <!-- How it works content starts here -->
-            <div class="bg-bgPrimary py-[70px] px-[160px] rounded-[20px] flex flex-col gap-12 relative mt-[65px]">
+            <div
+                class="bg-bgPrimary py-10 md:py-[70px] pl-[87px] md:pl-8 pr-7 xl:px-[160px] lg:rounded-[20px] flex flex-col space-y-5 lg:gap-12 relative mt-[65px]">
                 <!-- Card-1 -->
-                <div class="flex items-center justify-between">
-                    <div class="bg-[#272932] w-[335px] h-[175px] flex items-center justify-center rounded-xl">
-                        <img src="./assets/how-it-works/card1.png" alt="">
+                <div class="flex items-center justify-between flex-wrap gap-y-4">
+                    <div
+                        class="bg-[#272932] w-full md:w-[300px] lg:w-[335px] py-[13px] flex items-center justify-center rounded-xl">
+                        <img class="w-[136px] md:w-[186px]" src="./assets/how-it-works/card1.png" alt="">
                     </div>
-                    <div class="w-[290px]">
-                        <h4 class="text-white text-2xl font-semibold">Add Website</h4>
-                        <p class="text-textPrimary">Nettracking gives you an innovative web-based tool that manages,
+                    <div class="w-[290px] md:w-[300px] lg:w-[335px] lg:pr-8">
+                        <h4 class="text-white text-lg md:text-2xl font-semibold">Add Website</h4>
+                        <p class="text-textPrimary text-[12px] md:text-[16px]">Nettracking gives you an innovative
+                            web-based tool that manages,
                             filters and reports on your website's</p>
                     </div>
                 </div>
                 <!-- Card-2 -->
-                <div class="flex flex-row-reverse items-center justify-between relative left-[44px]">
-                    <div class="bg-[#272932] w-[335px] h-[175px] flex items-center justify-center rounded-xl">
-                        <img src="./assets/how-it-works/card2.png" alt="">
+                <div
+                    class="flex flex-row-reverse items-center justify-between flex-wrap gap-y-4 relative lg:left-[44px]">
+                    <div
+                        class="bg-[#272932] w-full md:w-[300px] lg:w-[335px] py-[14px] md:py-[18px] lg:mr-11 flex items-center justify-center rounded-xl">
+                        <img class="w-[140px] md:w-[180px]" src="./assets/how-it-works/card2.png" alt="">
                     </div>
                     <div class="w-[290px] text-right">
-                        <h4 class="text-white text-2xl font-semibold">Get Tracking Code</h4>
-                        <p class="text-textPrimary">filters and reports on your website's search engine ranking results.
-                            In short, nettracking gives you the information</p>
+                        <h4 class="text-white text-lg md:text-2xl font-semibold">Get Tracking Code</h4>
+                        <p class="text-textPrimary text-[12px] md:text-[16px]">Filters and reports on your website's
+                            search engine ranking results.
+                            In short, Nettracking gives you the information</p>
                     </div>
                 </div>
                 <!-- Card-3 -->
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between flex-wrap gap-y-4">
                     <div
-                        class="bg-[#272932] w-[335px] h-[175px] flex items-center justify-center gap-[30px] rounded-xl">
-                        <img src="./assets/how-it-works/card1.1.png" alt="">
-                        <img src="./assets/how-it-works/card1.2.png" alt="">
+                        class="bg-[#272932] w-full md:w-[300px] lg:w-[335px] py-[19px] md:py-[23px] px-7 flex items-center justify-center gap-[15px] md:gap-[30px] rounded-xl">
+                        <img class="w-[84px] md:w-[106px]" src="./assets/how-it-works/card1.1.png" alt="">
+                        <img class="w-[93px] md:w-[119px]" src="./assets/how-it-works/card1.2.png" alt="">
                     </div>
-                    <div class="w-[290px]">
-                        <h4 class="text-white text-2xl font-semibold">Start Tracking</h4>
-                        <p class="text-textPrimary">In your website's ranking position and accurately track organic (or
+                    <div class="w-[290px] md:w-[300px] lg:w-[335px] lg:pr-8">
+                        <h4 class="text-white text-lg md:text-2xl font-semibold">Start Tracking</h4>
+                        <p class="text-textPrimary text-[12px] md:text-[16px]">In your website's ranking position and accurately track organic (or
                             natural) search engine movement over time.</p>
                     </div>
                 </div>
 
                 <!-- Timeline div -->
-                <div class="timeline-component absolute top-[95px] left-1/2 -translate-x-1/2">
-                    <div class="flex flex-col justify-between items-center h-[512px] relative">
+                <div class="timeline-component absolute top-5 md:top-[95px] left-6 md:left-1/2 md:-translate-x-1/2">
+                    <div class="flex flex-col justify-between items-center h-[560px] md:h-[450px] lg:h-[512px] relative">
                         <div
-                            class="bg-[#2D2F37] w-[60px] h-[60px] text-white text-[20px] font-medium border-[2px] border-[#FFFFFF14] rounded-full flex items-center justify-center z-10">
+                            class="bg-[#2D2F37] w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] text-white text-[20px] font-medium border-[2px] border-[#FFFFFF14] rounded-full flex items-center justify-center z-10 relative lg:-top-1">
                             01
                         </div>
                         <div
-                            class="bg-[#2D2F37] w-[60px] h-[60px] text-white text-[20px] font-medium border-[2px] border-[#FFFFFF14] rounded-full flex items-center justify-center z-10">
+                            class="bg-[#2D2F37] w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] text-white text-[20px] font-medium border-[2px] border-[#FFFFFF14] rounded-full flex items-center justify-center z-10 relative -top-1 sm:top-0">
                             02
                         </div>
                         <div
-                            class="bg-[#2D2F37] w-[60px] h-[60px] text-white text-[20px] font-medium border-[2px] border-[#FFFFFF14] rounded-full flex items-center justify-center z-10">
+                            class="bg-[#2D2F37] w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] text-white text-[20px] font-medium border-[2px] border-[#FFFFFF14] rounded-full flex items-center justify-center z-10 relative top-2 sm:top-0 lg:top-6">
                             03</div>
                         <div
-                            class="border-t-[2px] border-dashed border-[#3E4047] w-[510px] absolute top-1/2 left-1/2 -translate-x-1/2 rotate-90 z-0">
+                            class="border-t-[2px] border-dashed border-[#3E4047] w-[560px] md:w-[448px] lg:w-[512px] absolute top-1/2 left-1/2 -translate-x-1/2 rotate-90 z-0">
                         </div>
                     </div>
                 </div>
@@ -398,7 +405,7 @@
                         of your online sales efforts.</p>
                 </div>
                 <!-- Price plan content starts here -->
-                <div class="font-poppins flex justify-center gap-5 mt-[72px]">
+                <div class="font-poppins flex justify-center flex-wrap lg:flex-nowrap gap-5 mt-[72px] px-5 xl:px-0">
                     <!-- Free plan -->
                     <div class="bg-bgPrimary rounded-[15px] w-fit pl-[39px] pr-[61px] pt-[50px] pb-[40px]">
                         <div>
@@ -626,7 +633,8 @@
                                     marketing performance.
                                     Our team of award-winning internet</p>
                                 <div>
-                                    <h4 class="text-testimonialUserText text-[16px] lg:text-[18px] font-bold">Sajib Smith
+                                    <h4 class="text-testimonialUserText text-[16px] lg:text-[18px] font-bold">Sajib
+                                        Smith
                                     </h4>
                                     <p class="text-textPrimary text-[12px] font-medium">Codelabs Digital</p>
                                 </div>
@@ -684,7 +692,8 @@
                                     marketing performance.
                                     Our team of award-winning internet</p>
                                 <div>
-                                    <h4 class="text-testimonialUserText text-[16px] lg:text-[18px] font-bold">Sajib Smith
+                                    <h4 class="text-testimonialUserText text-[16px] lg:text-[18px] font-bold">Sajib
+                                        Smith
                                     </h4>
                                     <p class="text-textPrimary text-[12px] font-medium">Codelabs Digital</p>
                                 </div>
