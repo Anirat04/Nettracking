@@ -9,7 +9,8 @@ module.exports = {
         testimonialUserText: "#CACACA",
         menuTextCol: "#a0a1a5",
         pricePlanPrimaryText: "#606266",
-        pricePlanSecondaryText: "#8C8F93"
+        pricePlanSecondaryText: "#8C8F93",
+        textActive: "#ffffff"
       },
       backgroundColor:{
         bgPrimary: "#1E2029",

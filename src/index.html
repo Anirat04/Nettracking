@@ -19,9 +19,11 @@
 <body class="bg-bodyBg font-inter">
     <main>
         <!-- Body background color div -->
-        <div class="w-[266px] md:w-[366px] h-[366px] bg-[#FF1B0033] rounded-full blur-[200px] md:blur-[150px] absolute top-[200px] md:top-[353px] left-0 lg:left-[300px] -z-10"></div>
+        <div
+            class="w-[266px] md:w-[366px] h-[366px] bg-[#FF1B0033] rounded-full blur-[200px] md:blur-[150px] absolute top-[200px] md:top-[353px] left-0 lg:left-[300px] -z-10">
+        </div>
         <!-- Navbar Starts here -->
-        <nav id="navbar" class="top-0 z-[99999] transition-all ease-linear duration-150">
+        <div id="navbar" class="top-0 z-[99999] transition-all ease-linear duration-150">
             <div class="max-w-[1170px] mx-auto py-5 flex items-center justify-between gap-[80px] px-5 xl:px-0">
                 <!-- Header- LOGO and Theme change button starts here -->
                 <header class="flex items-center gap-2">
@@ -42,15 +44,15 @@
                     </div>
                 </header>
                 <!-- Navigation menu starts here -->
-                <menu class="flex-grow hidden lg:flex">
+                <nav class="flex-grow hidden lg:flex">
                     <ul class="flex gap-[34px] text-[13px] font-medium">
-                        <li class="text-menuTextCol hover:text-white"><a href="#key-features">Features</a></li>
-                        <li class="text-menuTextCol hover:text-white"><a href="#our-pricing-plan">Pricing</a></li>
-                        <li class="text-menuTextCol hover:text-white"><a href="#how-it-works">How it works</a></li>
+                        <li><a class="text-menuTextCol hover:text-white" href="#key-features">Features</a></li>
+                        <li><a class="text-menuTextCol hover:text-white" href="#our-pricing-plan">Pricing</a></li>
+                        <li><a class="text-menuTextCol hover:text-white" href="#how-it-works">How it works</a></li>
                         <li class="text-menuTextCol hover:text-white"><a href="">Knowledge base</a></li>
-                        <li class="text-menuTextCol hover:text-white"><a href="#faq">FAQ</a></li>
+                        <li><a class="text-menuTextCol hover:text-white" href="#faq">FAQ</a></li>
                     </ul>
-                </menu>
+                </nav>
                 <!-- Signin Signup buttons starts here -->
                 <div class="lg:flex gap-[18px] hidden">
                     <button
@@ -70,11 +72,11 @@
                     </svg>
                 </div>
             </div>
-        </nav>
+        </div>
         <!-- Responsive Menu -->
         <div id="responsiveMenu"
             class="hidden w-full h-full bg-[rgba(0,0,0,0.7)] backdrop-blur-md fixed py-8 z-[99999]">
-            <menu class="">
+            <nav class="">
                 <ul class=" space-y-[34px] text-[18px] font-medium text-center">
                     <li class="text-white"><a href="#key-features">Features</a></li>
                     <li class="text-white"><a href="#our-pricing-plan">Pricing</a></li>
@@ -82,7 +84,7 @@
                     <li class="text-white"><a href="">Knowledge base</a></li>
                     <li class="text-white"><a href="#faq">FAQ</a></li>
                 </ul>
-            </menu>
+            </nav>
         </div>
 
         <!-- Banner section starts here -->
@@ -1045,7 +1047,6 @@
         window.onscroll = function () { stickyNav() };
         function stickyNav() {
             if (window.scrollY >= 300) {
-                console.log(window.scrollY)
                 document.getElementById("navbar").style.position = "sticky"
                 document.getElementById("navbar").style.backgroundColor = "#22222B"
                 document.getElementById("navbar").style.boxShadow = "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)"
@@ -1064,6 +1065,30 @@
                 x.style.display = "block";
             }
         }
+        // Active navbar
+        document.addEventListener('DOMContentLoaded', () => {
+            let sections = document.querySelectorAll('section');
+            let navLinks = document.querySelectorAll('nav ul li a');
+
+            window.addEventListener('scroll', () => {
+                let top = window.scrollY;
+
+                sections.forEach(sec => {
+                    let offset = sec.offsetTop - 150;
+                    let height = sec.offsetHeight;
+                    let id = sec.getAttribute('id');
+
+                    if (top >= offset && top < offset + height) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('text-textActive');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('text-textActive');
+                            }
+                        });
+                    }
+                });
+            });
+        });
     </script>
 
     <!-- Swiper JS -->
