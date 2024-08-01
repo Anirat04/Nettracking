@@ -14,35 +14,12 @@
         rel="stylesheet">
     <!-- Swiper Js CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script>
-        // Sticky navbar
-        window.onscroll = function () { stickyNav() };
-        function stickyNav() {
-            if (window.scrollY >= 300) {
-                console.log(window.scrollY)
-                document.getElementById("navbar").style.position = "sticky"
-                document.getElementById("navbar").style.backgroundColor = "#22222B"
-                document.getElementById("navbar").style.boxShadow = "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)"
-            } else {
-                document.getElementById("navbar").style.position = "relative";
-                document.getElementById("navbar").style.backgroundColor = "transparent"
-                document.getElementById("navbar").style.boxShadow = "none"
-            }
-        }
-        // Toggle menu button
-        function toggleMenu() {
-            var x = document.getElementById("responsiveMenu");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
 </head>
 
 <body class="bg-bodyBg font-inter">
     <main>
+        <!-- Body background color div -->
+        <div class="w-[266px] md:w-[366px] h-[366px] bg-[#FF1B0033] rounded-full blur-[200px] md:blur-[150px] absolute top-[200px] md:top-[353px] left-0 lg:left-[300px] -z-10"></div>
         <!-- Navbar Starts here -->
         <nav id="navbar" class="top-0 z-[99999] transition-all ease-linear duration-150">
             <div class="max-w-[1170px] mx-auto py-5 flex items-center justify-between gap-[80px] px-5 xl:px-0">
@@ -93,7 +70,8 @@
             </div>
         </nav>
         <!-- Responsive Menu -->
-        <div id="responsiveMenu" class="hidden w-full h-full bg-[rgba(0,0,0,0.7)] backdrop-blur-md fixed py-8 z-[99999]">
+        <div id="responsiveMenu"
+            class="hidden w-full h-full bg-[rgba(0,0,0,0.7)] backdrop-blur-md fixed py-8 z-[99999]">
             <menu class="">
                 <ul class=" space-y-[34px] text-[18px] font-medium text-center">
                     <li class="text-white"><a href="#key-features">Features</a></li>
@@ -1059,6 +1037,32 @@
         <!-- Footer section ends here -->
     </main>
 
+    <!-- Sticky Nav and Toggle menu button js starts here -->
+    <script>
+        // Sticky navbar
+        window.onscroll = function () { stickyNav() };
+        function stickyNav() {
+            if (window.scrollY >= 300) {
+                console.log(window.scrollY)
+                document.getElementById("navbar").style.position = "sticky"
+                document.getElementById("navbar").style.backgroundColor = "#22222B"
+                document.getElementById("navbar").style.boxShadow = "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)"
+            } else {
+                document.getElementById("navbar").style.position = "relative";
+                document.getElementById("navbar").style.backgroundColor = "transparent"
+                document.getElementById("navbar").style.boxShadow = "none"
+            }
+        }
+        // Toggle menu button
+        function toggleMenu() {
+            var x = document.getElementById("responsiveMenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
