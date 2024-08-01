@@ -14,55 +14,107 @@
         rel="stylesheet">
     <!-- Swiper Js CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script>
+        // Sticky navbar
+        window.onscroll = function () { stickyNav() };
+        function stickyNav() {
+            if (window.scrollY >= 300) {
+                console.log(window.scrollY)
+                document.getElementById("navbar").style.position = "sticky"
+                document.getElementById("navbar").style.backgroundColor = "#22222B"
+                document.getElementById("navbar").style.boxShadow = "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)"
+            } else {
+                document.getElementById("navbar").style.position = "relative";
+                document.getElementById("navbar").style.backgroundColor = "transparent"
+                document.getElementById("navbar").style.boxShadow = "none"
+            }
+        }
+        // Toggle menu button
+        function toggleMenu() {
+            var x = document.getElementById("responsiveMenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
 
 <body class="bg-bodyBg font-inter">
     <main>
         <!-- Navbar Starts here -->
-        <nav id="navbar" class="max-w-[1170px] mx-auto hidden py-6 flex items-center gap-[80px]">
-            <!-- Header- LOGO and Theme change button starts here -->
-            <header class="flex items-center gap-2">
-                <div>
-                    <h2 class="font-bold text-white">Nettracking</h2>
-                </div>
-                <div class="w-[40px] h-[22px] rounded-full bg-[#2A2B33] relative">
-                    <div
-                        class="bg-[#F6F1EC] w-[18px] h-[18px] rounded-full flex items-center justify-center absolute right-[2px] top-1/2 -translate-y-1/2">
-                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.91811 6.81362C7.46774 6.264 7.82628 5.59572 7.99392 4.89124C8.04193 4.68945 7.79393 4.55321 7.64762 4.70024C7.64583 4.70206 7.64403 4.70385 7.64223 4.70565C6.41936 5.92853 4.42202 5.90495 3.229 4.63492C2.10425 3.43756 2.11902 1.57867 3.26118 0.397922C3.27559 0.383036 3.2901 0.368325 3.30473 0.353789C3.45143 0.208037 3.31431 -0.0388342 3.11312 0.00897873C2.4149 0.174909 1.75219 0.528341 1.20524 1.06946C-0.393934 2.65162 -0.402941 5.21679 1.18557 6.80963C2.76714 8.39553 5.33488 8.39684 6.91811 6.81362Z"
-                                fill="#2A2B33" />
-                        </svg>
+        <nav id="navbar" class="top-0 z-[99999] transition-all ease-linear duration-150">
+            <div class="max-w-[1170px] mx-auto py-5 flex items-center justify-between gap-[80px] px-5 xl:px-0">
+                <!-- Header- LOGO and Theme change button starts here -->
+                <header class="flex items-center gap-2">
+                    <div>
+                        <h2 class="font-bold text-white">Nettracking</h2>
                     </div>
+                    <div class="w-[40px] h-[22px] rounded-full bg-[#2A2B33] relative">
+                        <div
+                            class="bg-[#F6F1EC] w-[18px] h-[18px] rounded-full flex items-center justify-center absolute right-[2px] top-1/2 -translate-y-1/2">
+                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.91811 6.81362C7.46774 6.264 7.82628 5.59572 7.99392 4.89124C8.04193 4.68945 7.79393 4.55321 7.64762 4.70024C7.64583 4.70206 7.64403 4.70385 7.64223 4.70565C6.41936 5.92853 4.42202 5.90495 3.229 4.63492C2.10425 3.43756 2.11902 1.57867 3.26118 0.397922C3.27559 0.383036 3.2901 0.368325 3.30473 0.353789C3.45143 0.208037 3.31431 -0.0388342 3.11312 0.00897873C2.4149 0.174909 1.75219 0.528341 1.20524 1.06946C-0.393934 2.65162 -0.402941 5.21679 1.18557 6.80963C2.76714 8.39553 5.33488 8.39684 6.91811 6.81362Z"
+                                    fill="#2A2B33" />
+                            </svg>
+                        </div>
+                    </div>
+                </header>
+                <!-- Navigation menu starts here -->
+                <menu class="flex-grow hidden lg:flex">
+                    <ul class="flex gap-[34px] text-[13px] font-medium">
+                        <li class="text-menuTextCol hover:text-white"><a href="#key-features">Features</a></li>
+                        <li class="text-menuTextCol hover:text-white"><a href="#our-pricing-plan">Pricing</a></li>
+                        <li class="text-menuTextCol hover:text-white"><a href="#how-it-works">How it works</a></li>
+                        <li class="text-menuTextCol hover:text-white"><a href="">Knowledge base</a></li>
+                        <li class="text-menuTextCol hover:text-white"><a href="#faq">FAQ</a></li>
+                    </ul>
+                </menu>
+                <!-- Signin Signup buttons starts here -->
+                <div class="lg:flex gap-[18px] hidden">
+                    <button
+                        class="py-[10px] px-[16px] text-white text-[13px] font-semibold bg-[#1D1F29] rounded-[4px]"><a
+                            href="#">Sign in</a></button>
+                    <button
+                        class="py-[10px] px-[16px] text-[#12141D] text-[13px] font-semibold bg-white rounded-[4px]"><a
+                            href="#">Sign up</a></button>
                 </div>
-            </header>
-            <!-- Navigation menu starts here -->
-            <menu class="flex-grow">
-                <ul class="flex gap-[34px] text-[13px] font-medium">
-                    <li class="text-menuTextCol hover:text-white"><a href="#key-features">Features</a></li>
-                    <li class="text-menuTextCol hover:text-white"><a href="#our-pricing-plan">Pricing</a></li>
-                    <li class="text-menuTextCol hover:text-white"><a href="#how-it-works">How it works</a></li>
-                    <li class="text-menuTextCol hover:text-white"><a href="">Knowledge base</a></li>
-                    <li class="text-menuTextCol hover:text-white"><a href="#faq">FAQ</a></li>
-                </ul>
-            </menu>
-            <!-- Signin Signup buttons starts here -->
-            <div class="flex gap-[18px]">
-                <button class="py-[10px] px-[16px] text-white text-[13px] font-semibold bg-[#1D1F29] rounded-[4px]"><a
-                        href="#">Sign in</a></button>
-                <button class="py-[10px] px-[16px] text-[#12141D] text-[13px] font-semibold bg-white rounded-[4px]"><a
-                        href="#">Sign up</a></button>
+
+                <!--  Hamburger menu icon -->
+                <div onclick="toggleMenu()" class="flex lg:hidden">
+                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M1 10H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M1 19H25" stroke="#FFFEFF" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
             </div>
         </nav>
+        <!-- Responsive Menu -->
+        <div id="responsiveMenu" class="hidden w-full h-full bg-[rgba(0,0,0,0.7)] backdrop-blur-md fixed py-8 z-[99999]">
+            <menu class="">
+                <ul class=" space-y-[34px] text-[18px] font-medium text-center">
+                    <li class="text-white"><a href="#key-features">Features</a></li>
+                    <li class="text-white"><a href="#our-pricing-plan">Pricing</a></li>
+                    <li class="text-white"><a href="#how-it-works">How it works</a></li>
+                    <li class="text-white"><a href="">Knowledge base</a></li>
+                    <li class="text-white"><a href="#faq">FAQ</a></li>
+                </ul>
+            </menu>
+        </div>
 
         <!-- Banner section starts here -->
         <section id="banner" class="max-w-[1170px] mx-auto mt-[60px]">
             <div class="max-w-[620px] mx-auto text-center">
                 <div class="">
-                    <h1 class="text-white text-[26px] md:text-[42px] font-bold leading-[32px] md:leading-[46px] px-5 md:px-0">
+                    <h1
+                        class="text-white text-[26px] md:text-[42px] font-bold leading-[32px] md:leading-[46px] px-5 md:px-0">
                         Content marketing solution &<br class="md:hidden"> idea of your business
                     </h1>
-                    <p class="text-textSecondHeading text-[12px] md:text-[20px] leading-6 mt-4 px-[54px] md:px-20">Nettracking is a content
+                    <p class="text-textSecondHeading text-[12px] md:text-[20px] leading-6 mt-4 px-[54px] md:px-20">
+                        Nettracking is a content
                         marketing
                         solution that tracks the effectiveness of your blog,</p>
                 </div>
@@ -78,7 +130,8 @@
                             </svg>
                         </span>
                     </button>
-                    <button class="bg-[#22222B] text-[9px] md:text-[14px] font-semibold text-white py-[7px] md:py-[14px] px-[13px] md:px-[30px] rounded-[4.5px] md:rounded-lg">
+                    <button
+                        class="bg-[#22222B] text-[9px] md:text-[14px] font-semibold text-white py-[7px] md:py-[14px] px-[13px] md:px-[30px] rounded-[4.5px] md:rounded-lg">
                         <a href="">Learn More</a>
                     </button>
                 </div>
